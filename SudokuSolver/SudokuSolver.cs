@@ -10,7 +10,7 @@ namespace SudokuSolver {
       BoardStatus status = board.Check();
             if (status == BoardStatus.Solved)
             {
-                board.ToString();
+                Console.Write(board);
                 return true;
             }
             

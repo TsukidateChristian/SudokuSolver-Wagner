@@ -32,7 +32,7 @@ namespace SudokuSolver {
             {
                 for (int j = 0; j < size; j++)
                 {
-                    sb.Append($"{board[i,j]} ");
+                    sb.Append($"{board[i, j]} ");
                 }
                 sb.AppendLine();
             }
