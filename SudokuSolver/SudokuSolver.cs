@@ -8,7 +8,12 @@ namespace SudokuSolver {
 
     private static bool Solve(SudokuBoard board, int i, int j) {
       BoardStatus status = board.Check();
-      if (status == BoardStatus.Solved) return true;
+            if (status == BoardStatus.Solved)
+            {
+                board.ToString();
+                return true;
+            }
+            
       if (status == BoardStatus.Unsolvable) return false;
       
       int iNext = i;
